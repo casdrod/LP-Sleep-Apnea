@@ -324,6 +324,10 @@ star:after {
   flex: 1;
 }
 
+#fixed-tabs .ra {
+  flex: 2;
+}
+
 #fixed-tabs a:nth-of-type(odd) {
   background-color: #3c8c8b;
 }
@@ -462,6 +466,114 @@ header address {
   display: block;
   margin-bottom: 15px;
 }
+header #nav {
+  display: flex;
+  max-width: 1260px;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  padding: 10px;
+}
+header #nav .btn {
+  display: flex;
+  padding: 0 5px 2px;
+  margin-right: 0;
+  width: 230px;
+  margin: 5px auto;
+}
+header #nav .btn span {
+  font-size: 33px;
+  padding: 5px 10px;
+  margin: auto;
+  letter-spacing: 2.6px;
+}
+header #nav .btn span small {
+  display: block;
+  font-size: 17px;
+  letter-spacing: 0.75px;
+}
+header #nav .btn i {
+  margin: auto;
+  font-size: 18px;
+  color: #5BB9B8;
+}
+header #nav .btn-alt {
+  background-color: #5BB9B8;
+  color: #231f20;
+}
+header #nav > * {
+  flex: 1;
+}
+header #nav #header-details i:before {
+  color: #FFD775;
+  font-size: 24px;
+  margin-right: 10px;
+}
+header #mobile-btns {
+  width: 100%;
+  display: flex;
+}
+header #mobile-btns > * {
+  flex: 1;
+  height: 64px;
+}
+header #mobile-btns .btn {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: center;
+  line-height: 1.3;
+  border-radius: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1;
+  padding-top: 3px;
+}
+header #mobile-btns .btn span {
+  width: 100%;
+  font-size: 28px;
+}
+header #mobile-btns .phone, header #mobile-btns .btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+}
+header #mobile-btns .phone span, header #mobile-btns .btn span {
+  width: 100%;
+}
+header #mobile-btns .phone {
+  background-color: #2C3944;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.3;
+}
+header #mobile-btns .phone span {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  color: #fff;
+}
+header #mobile-btns #mobile-special .container {
+  margin: 10px 0;
+  border-top: 2px solid #AFB1B1;
+  border-bottom: 2px solid #AFB1B1;
+  padding: 5px;
+}
+header #mobile-btns #mobile-special .container h4 {
+  color: #00294d;
+  font-size: 22px;
+  margin: 0;
+}
+header #mobile-btns #mobile-special .container small {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  font-weight: 700;
+}
 
 .fix-nav header {
   background-color: #fff;
@@ -510,50 +622,6 @@ address a:hover {
 }
 .phone:hover {
   color: #FFD775;
-}
-
-#nav {
-  display: flex;
-  max-width: 1260px;
-  justify-content: space-between;
-  margin: auto;
-  align-items: center;
-  padding: 10px;
-}
-#nav .btn {
-  display: flex;
-  padding: 0 5px 2px;
-  margin-right: 0;
-  width: 230px;
-  margin: 5px auto;
-}
-#nav .btn span {
-  font-size: 33px;
-  padding: 5px 10px;
-  margin: auto;
-  letter-spacing: 2.6px;
-}
-#nav .btn span small {
-  display: block;
-  font-size: 17px;
-  letter-spacing: 0.75px;
-}
-#nav .btn i {
-  margin: auto;
-  font-size: 18px;
-  color: #5BB9B8;
-}
-#nav .btn-alt {
-  background-color: #5BB9B8;
-  color: #231f20;
-}
-#nav > * {
-  flex: 1;
-}
-#nav #header-details i:before {
-  color: #FFD775;
-  font-size: 24px;
-  margin-right: 10px;
 }
 
 #covid {
@@ -1269,22 +1337,22 @@ footer .btn, .submit-btn {
 
 ::-webkit-input-placeholder {
   color: #555;
-  font: 400 13px/40px Lato, sans-serif;
+  font: 400 15px/40px Lato, sans-serif;
 }
 
 :-moz-placeholder {
   color: #555;
-  font: 400 13px/40px Lato, sans-serif;
+  font: 400 15px/40px Lato, sans-serif;
 }
 
 ::-moz-placeholder {
   color: #555;
-  font: 400 13px/40px Lato, sans-serif;
+  font: 400 15px/40px Lato, sans-serif;
 }
 
 :-ms-input-placeholder {
   color: #555;
-  font: 400 13px/40px Lato, sans-serif;
+  font: 400 15px/40px Lato, sans-serif;
 }
 
 footer {
@@ -1317,7 +1385,7 @@ footer {
 
 .hours {
   color: #333;
-  font: 400 15px/34px Lato, sans-serif;
+  font: 400 18px/34px Lato, sans-serif;
   max-width: 260px;
   margin: 10px auto 30px;
   text-align: left;
@@ -1525,10 +1593,94 @@ tr.top-answers {
   margin-bottom: 30px;
   padding-top: 10px;
 }
+#landing-page-form .simple input, #landing-page-form .simple textarea {
+  width: 400px;
+}
 #landing-page-form .btn {
   width: 160px;
 }
 
+/* -- quiz page -- */
+.page_lp-sleep-apnea-2023-quiz #footer-content .simple, .page_lp-sleep-apnea-2023-quiz #footer-content .line:first-of-type {
+  display: none;
+}
+
+.page_lp-sleep-apnea-2023-quiz #footer-content {
+  max-width: 1000px;
+}
+
+.page_lp-sleep-apnea-2023-quiz h1 {
+  margin-top: 30px;
+}
+
+#sleep-apnea-quiz form {
+  max-width: 1000px;
+  margin: auto;
+}
+
+#sleep-apnea-quiz form input[type=text] {
+  padding: 10px;
+  width: 60%;
+  margin: 10px auto;
+}
+
+#sleep-apnea-quiz form input[type=text]::-moz-placeholder {
+  font-size: 18px;
+}
+
+#sleep-apnea-quiz form input[type=text]::placeholder {
+  font-size: 18px;
+}
+
+#sleep-apnea-quiz form label {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#sleep-apnea-quiz .answers span {
+  margin: 0 10px;
+  font-size: 22px;
+}
+
+#sleep-apnea-quiz .answers span input {
+  margin-right: 10px;
+}
+
+#sleep-apnea-quiz #history .answers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+#sleep-apnea-quiz #history .answers span {
+  margin: 10px 25px;
+}
+
+#sleep-apnea-quiz #questions > div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 50px auto;
+}
+
+@media (max-width: 1000px) {
+  #sleep-apnea-quiz form {
+    padding: 10px;
+  }
+}
+@media (max-width: 600px) {
+  #sleep-apnea-quiz form label {
+    margin: auto;
+  }
+  #sleep-apnea-quiz .answers {
+    width: 100%;
+  }
+  #sleep-apnea-quiz .answers span {
+    margin: 20px 0;
+    display: block;
+    width: 100%;
+  }
+}
 hr {
   border-bottom: 1px solid rgba(151, 151, 151, 0.74);
   box-shadow: 5px 1px 1px rgba(14, 14, 15, 0.35);
@@ -1655,6 +1807,11 @@ hr {
     margin: 100px 20px;
   }
 }
+@media (min-width: 1000px) {
+  #mobile-btns {
+    display: none !important;
+  }
+}
 @media (max-width: 1000px) {
   header {
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35);
@@ -1663,34 +1820,24 @@ hr {
     display: block;
     max-width: 95%;
   }
-  #nav {
-    padding-top: 0;
+  header #nav {
+    padding: 0;
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
   }
-  #nav #header-details {
-    flex: 100%;
-    margin: 20px 0 5px;
+  header #nav #header-details, header #nav #header-buttons {
+    display: none;
   }
-  #nav #header-buttons {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-  #nav .logo {
+  header #nav .logo {
     flex: 0 1 270px;
     padding-top: 10px;
     margin-left: 0;
     order: -1;
   }
-  #nav .btn {
-    margin: 10px;
-  }
-  #nav .phone {
+  header #nav .phone {
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
     flex: 100%;
   }
   .fix-nav #header-buttons {

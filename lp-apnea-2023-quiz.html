@@ -1,80 +1,79 @@
-<h1>Sedation Dentistry Quiz</h1>
+<h1>Sleep Apnea Quiz</h1>
+<div id="sleep-apnea-quiz">
+    <form action="" class="forms" method="post">
+        <input name="first_name" required="true" type="text" placeholder="First Name">
+        <input name="last_name" type="text" placeholder="Last Name">
+        <input name="email" required="true" type="text" placeholder="Email Address">
+        <input name="phone" type="text" required="true" placeholder="Phone Number">
+        <div id="questions">
+            <div>
+                <label for="diagnosed">Have you been diagnosed with sleep apnea?</label>
+                <div class="answers">
+                    <span><input name="diagnosed" type="radio" value="Yes">Yes</span>
+                    <span><input name="diagnosed" type="radio" value="No">No</span>
+                </div>
+            </div>
+            <div>
+                <label for="Snore">Have you been told that you snore? </label>
+                <div class="answers">
+                    <span><input name="Snore" type="radio" value="Yes">Yes</span>
+                    <span><input name="Snore" type="radio" value="No">No</span>
+                </div>
+            </div>
+            <div>
+                <label for="awake_with_chestpain_or_shortness_of_breath">Do you awaken from sleep with chest pain or shortness of breath?</label>
+                <div class="answers">
+                    <span><input name="awake_with_chestpain_or_shortness_of_breath" type="radio" value="Yes">Yes</span>
+                    <span><input name="awake_with_chestpain_or_shortness_of_breath" type="radio" value="No">No</span>
+                </div>
+            </div>
+            <div>
+                <label for="stop_breathing">Has anyone said that you seem to stop breathing while sleeping?</label>
+                <div class="answers">
+                    <span><input name="stop_breathing" type="radio" value="Yes">Yes</span>
+                    <span><input name="stop_breathing" type="radio" value="No">No</span>
+                </div>
+            </div>
+            <div>
+                <label for="dream">Do you dream?</label>
+                <div class="answers">
+                    <span><input name="dream" type="radio" value="Yes">Yes</span>
+                    <span><input name="dream" type="radio" value="No">No</span>
+                    <span><input name="dream" type="radio" value="Not Sure">Not sure</span>
+                </div>
+            </div>
+            <div>
+                <label for="describe_sleep">How would you describe your sleep?</label>
+                <div class="answers">
+                    <span><input name="describe_sleep" type="radio" value="Restful">Restful</span>
+                    <span><input name="describe_sleep" type="radio" value="Disruptive">Disruptive</span>
+                    <span><input name="describe_sleep" type="radio" value="Non-existent">Non-existent</span>
+                </div>
+            </div>
+            <div>
+                <label for="cpap">Do you have a CPAP?</label>
+                <div class="answers">
+                    <span><input name="cpap" type="radio" value="Yes, use every night">Yes, use every night</span>
+                    <span><input name="cpap" type="radio" value="Yes, use sporadically">Yes, use sporadically</span>
+                    <span><input name="cpap" type="radio" value="No">No</span>
+                </div>
+            </div>
+            <div id="history">
+                <label for="history">Do you have/have you had any of the following (select all that apply):</label>
+                <div class="answers">
+                    <span><input type="checkbox" name="history" value="Diabetes">Diabetes</span>
+                    <span><input type="checkbox" name="history" value="Shortness of breath">Shortness of breath</span>
+                    <span><input type="checkbox" name="history" value="Stroke">Stroke</span>
+                    <span><input type="checkbox" name="history" value="Atrial fibrillation">Atrial fibrillation</span>
+                    <span><input type="checkbox" name="history" value="High blood pressure">High blood pressure</span>
+                    <span><input type="checkbox" name="history" value="Coronary artery disease">Coronary artery disease</span>
+                    <span><input type="checkbox" name="history" value="Congestive heart failure">Congestive heart failure</span>
+                </div>
+            </div>
+        </div>
 
-<div class="sedation-quiz">
-	<form action="https://tnt-adder.herokuapp.com/submit/1ceb41f5-1391-4d48-9d4f-2e89e3753c87" class="forms" method="post">
-		<table>
-			<thead>
-				<tr class="top-answers">
-					<th></th>
-					<th>Yes</th>
-					<th>No</th>
-				</tr>
-			</thead>
-			<tr>
-				<td><label for="slight_uneasiness">Do you feel slight uneasiness and tension the evening prior to your dental visit, which makes you consider canceling your dental appointment?</label></td>
-				<td><input id="slight_uneasiness" name="slight_uneasiness" type="radio" value="yes"></td>
-				<td><input id="slight_uneasiness" name="slight_uneasiness" type="radio" value="no"></td>
-			</tr>
-			<tr>
-				<td><label for="reception">While waiting in the reception area of the dental office, do you feel nervous about the visit? </label></td>
-				<td><input id="reception" name="reception" type="radio" value="yes"></td>
-				<td><input id="reception" name="reception" type="radio" value="no"></td>
-			</tr>
-			<tr>
-				<td><label for="prior_dental">Have you had a prior dental experience that was unpleasant? </label></td>
-				<td><input id="prior_dental" name="prior_dental" type="radio" value="yes"></td>
-				<td><input id="prior_dental" name="prior_dental" type="radio" value="no"></td>
-			</tr>
-			<tr>
-				<td><label for="anxious">While in the dental chair, do you feel uneasy and anxious? </label></td>
-				<td><input id="anxious" name="anxious" type="radio" value="yes"></td>
-				<td><input id="anxious" name="anxious" type="radio" value="no"></td>
-			</tr>
-			<tr>
-				<td><label for="instruments">Does seeing the dentist or dental hygienist"s instruments make you anxious? </label></td>
-				<td><input id="instruments" name="instruments" type="radio" value="yes"></td>
-				<td><input id="instruments" name="instruments" type="radio" value="no"></td>
-			</tr>
-			<tr>
-				<td><label for="worst_mouth">Do you feel embarrassed that the dentist will say you have the worst mouth they have ever seen? </label></td>
-				<td><input id="worst_mouth" name="worst_mouth" type="radio" value="yes"></td>
-				<td><input id="worst_mouth" name="worst_mouth" type="radio" value="no"></td>
-			</tr>
-<tr>
-				<td><label for="avoid_dentist">Have you ever tolerated your dental pain just to avoid a visit to the dentist? </label></td>
-				<td><input id="avoid_dentist" name="avoid_dentist" type="radio" value="yes"></td>
-				<td><input id="avoid_dentist" name="avoid_dentist" type="radio" value="no"></td>
-			</tr>
-<tr>
-				<td><label for="fear">Do you feel that dentists do not take your worries (fears) seriously? </label></td>
-				<td><input id="fear" name="fear" type="radio" value="yes"></td>
-				<td><input id="fear" name="fear" type="radio" value="no"></td>
-			</tr>
-<tr>
-				<td><label for="treatment">Do you feel that if you were to indicate that a treatment hurts, that the dentist would stop and try to correct the problem? </label></td>
-				<td><input id="treatment" name="treatment" type="radio" value="yes"></td>
-				<td><input id="treatment" name="treatment" type="radio" value="no"></td>
-			</tr>
-<tr>
-				<td><label for="chair">Do you feel that when you're in the chair that the treatment can't be interrupted, if you need a moment to rest? </label></td>
-				<td><input id="chair" name="chair" type="radio" value="yes"></td>
-				<td><input id="chair" name="chair" type="radio" value="no"></td>
-			</tr>
-		</table>
-
-<table>
-		<label for="first_name">First Name*</label>
-		<input id="first_name" name="first_name" required="true" type="text" placeholder="John">
-		<label for="last_name">Last Name</label>
-		<input id="last_name" name="last_name" type="text" placeholder="Smith"><br>
-		<label for="email">Email Address*</label>
-		<input id="email" name="email" required="true" type="email" placeholder="john@gmail.com">
-		<label for="phone">Phone Number</label>
-		<input id="phone" name="phone" type="tel" required="true" placeholder="555-555-5555"><br>
-        </table>
-
-		<input name="Submit" type="submit" value="Submit">
-		<input name="_redirect" type="hidden" value="thanks.html">
-		<input name="_subject" type="hidden" value="LP Sleep Apnea Quiz">
-	</form>
+        <button class="btn">Submit</button>
+        <input name="_redirect" type="hidden" value="thanks.html">
+        <input name="_subject" type="hidden" value="LP Sleep Apnea 2023 Quiz">
+    </form>
 </div>
